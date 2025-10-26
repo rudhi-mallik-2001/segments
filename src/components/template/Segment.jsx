@@ -41,12 +41,13 @@ const Segment = ({ onClose }) => {
       return;
     }
     dispatch(addSegments(payload));
-    console.log(payload)
+    // console.log(payload)
     await sendSegmentData(payload);
     onClose();
+    alert("Schema Added")
   };
   const removeSchema = (segment_name) => {
-    console.log(segment_name)
+    // console.log(segment_name)
     const segmentAfterRemoved = selectedSchemas.filter(
       (segment) => segment.value !== segment_name
     );
@@ -141,3 +142,4 @@ const Segment = ({ onClose }) => {
 };
 
 export default Segment;
+
