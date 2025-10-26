@@ -1,6 +1,6 @@
 
-// const WEBHOOKID=`49485054-0efc-4932-8cfa-b510745edb85` //use this one to see 
-const WEBHOOKID=`YOUR_GENERATED_ID`;
+const WEBHOOKID=`49485054-0efc-4932-8cfa-b510745edb85` //use this one to see 
+// const WEBHOOKID=`YOUR_GENERATED_ID`;
 
 export const sendSegmentData = async (data) => {
   try {
@@ -14,4 +14,5 @@ export const sendSegmentData = async (data) => {
     console.error("❌ Error sending data", error);
   }
 };
+
 
